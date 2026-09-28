@@ -151,7 +151,11 @@ PREMIUM RELAY & BLOSSOM SERVER
 	go checkExpiredSubscriptions()
 
 	mux := relay.Router()
-	mux.HandleFunc("POST /bitvora_webhook", handleBitvoraWebhook)
+	// The former Bitvora webhook endpoint is intentionally disabled.
+	// mux.HandleFunc("POST /bitvora_webhook", handleBitvoraWebhook)
+
+	// OpenNode sends charge status updates to this endpoint.
+	mux.HandleFunc("POST /opennode_webhook", handleOpenNodeWebhook)
 	mux.HandleFunc("POST /generate_invoice", handleGenerateInvoice)
 	mux.HandleFunc("POST /poll_payment", handlePollPayment)
 	mux.HandleFunc("GET /", handleHomePage)
