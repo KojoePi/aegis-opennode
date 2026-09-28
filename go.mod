@@ -3,7 +3,6 @@ module github.com/bitvora/aegis
 go 1.23.1
 
 require (
-	github.com/bitvora/go-bitvora v0.1.4
 	github.com/fiatjaf/eventstore v0.14.4
 	github.com/fiatjaf/khatru v0.14.0
 	github.com/joho/godotenv v1.5.1
