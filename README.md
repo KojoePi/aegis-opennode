@@ -1,6 +1,6 @@
-# Aegis Relay
+# Aegis Relay with Opennode Payment Processing
 
-Aegis Relay is a premium relay and blossom service that allows relay operators to earn income by providing relay services to the network.
+Aegis Relay is a premium relay and blossom service written by [Bitvora](https://github.com/bitvora) that allows relay operators to earn income by providing relay services to the network. I have been running it for over a year now without any single issue on the relay side. However the "built in" payment process or stopped working. So i have made changes, that enable [OpenNode](https://github.com/opennodedev) as a payment processor. 
 
 It's built on the [Khatru](https://khatru.nostr.technology) framework.
 
@@ -16,7 +16,7 @@ Follow these steps to get the Aegis Relay running on your local machine:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/bitvora/aegis.git
+git clone https://github.com/bitvora/aegis-opennode.git
 cd aegis
 ```
 
@@ -34,35 +34,35 @@ Open the `.env` file and set the necessary environment variables. Example variab
 
 ```bash
 # System Configuration
-BLOSSOM_PATH="/home/utxo/aegis_blossom"
+BLOSSOM_PATH="/home/aegis_blossom"
 DB_PATH="db/"
 
 # Relay Metadata
-RELAY_NAME="utxo's aegis relay"
+RELAY_NAME="your aegis relay"
 RELAY_PUBKEY="e2ccf7cf20403f3f2a4a55b328f0de3be38558a7d5f33632fdaaefc726c1c8eb"
 RELAY_DESCRIPTION="premium relay and blossom server"
-RELAY_URL="aegis.utxo.one"
-RELAY_ICON="https://pfp.nostr.build/d8fb3b6100a0eb9e652bbc34a0c043b7f225dc74e4ed6d733d0e059f9bd444d4.jpg"
-RELAY_CONTACT="https://utxo.one"
+RELAY_URL="relayted.de"
+RELAY_ICON="icon url"
+RELAY_CONTACT="https://relayted.de"
 RELAY_PORT="8080"
 
-# Bitvora & Payment Configuration
-BITVORA_API_KEY=""
-BITVORA_WEBHOOK_SECRET=""
-PRICE_PER_YEAR="100"
+# Opennode Payment Information
+OPENNODE_API_KEY="your opennode api key"
+OPENNODE_WEBHOOK_URL="https://yoururl/opennode_webhook"
+PRICE_PER_YEAR="ADD SAT AMOUNT FOR ONE YEAR"
 ```
 
-### 4. Setup Bitvora Payments
+### 4. Setup OpenNode Payments
 
-1. Create an account on [Bitvora](https://bitvora.com).
-2. Create an API Key with permissions `Create lightning invoice`
-3. Setup a webhook with the following URL: `https://yourdomain.com/bitvora_webhook` with `lightning.deposit.completed` event
+1. Create an account on [OpenNode](https://opennode.com).
+2. Create an API Key with permissions `Invoices`
 
 ### 5. Build the project
 
 Run the following command to build the relay:
 
 ```bash
+go mod tidy
 go build
 ```
 
