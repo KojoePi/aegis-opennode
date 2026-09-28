@@ -7,8 +7,6 @@ github.com/andybalholm/brotli v1.1.1 h1:PR2pgnyFznKEugtsUo0xLdDop5SKXd5Qf5ysW+7X
 github.com/andybalholm/brotli v1.1.1/go.mod h1:05ib4cKhjx3OQYUY22hTVd34Bc8upXjOLL2rKwwZBoA=
 github.com/bep/debounce v1.2.1 h1:v67fRdBA9UQu2NhLFXrSg0Brw7CexQekrBwDMM8bzeY=
 github.com/bep/debounce v1.2.1/go.mod h1:H8yggRPQKLUhUoqrJC1bO2xNya7vanpDl7xR3ISbCJ0=
-github.com/bitvora/go-bitvora v0.1.4 h1:YHzrjH53dmIEmmDrEz9+6Sh7Ljdq8znBpGUuNHdAoMY=
-github.com/bitvora/go-bitvora v0.1.4/go.mod h1:3NQgk5FxVq1Hgm5ARbsfLw3tZZwuMBH1VIoU79/I5nw=
 github.com/btcsuite/btcd v0.20.1-beta/go.mod h1:wVuoA8VJLEcwgqHBwHmzLRazpKxTv13Px/pDuV7OomQ=
 github.com/btcsuite/btcd v0.22.0-beta.0.20220111032746-97732e52810c/go.mod h1:tjmYdS6MLJ5/s0Fj4DbLgSbDHbEqLJrtnHecBFkdz5M=
 github.com/btcsuite/btcd v0.23.0/go.mod h1:0QJIIN1wwIXF/3G/m87gIwGniDMDQqjVn4SZgnFpsYY=
@@ -46,8 +44,6 @@ github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0/go.mod h1:v57UDF4pDQJcEfFUCRop3
 github.com/decred/dcrd/lru v1.0.0/go.mod h1:mxKOwFd7lFjN2GZYsiz/ecgqR6kkYAl+0pz0tEMk218=
 github.com/fasthttp/websocket v1.5.11 h1:TCO3H2VSxeTJQ+Ij+w8q7UBvdVedMOy/G7aZ0a6V19s=
 github.com/fasthttp/websocket v1.5.11/go.mod h1:QWILjDXurHFN5519nH2Pe9rtRuKZ/OIx/rlBF9coYds=
-github.com/fiatjaf/eventstore v0.14.3 h1:hAF05aeZ5P9jhIIk2y1HzObgM0XDxt7NLE+9xlNMOjs=
-github.com/fiatjaf/eventstore v0.14.3/go.mod h1:XmYZSdFxsY+cwfpdzVG61M7pemcmqlZwDfDGFC8WwWo=
 github.com/fiatjaf/eventstore v0.14.4 h1:bqJQit/M5E6vwbWwgrL4kTPoWCbt1Hb9H/AH4xf9uVQ=
 github.com/fiatjaf/eventstore v0.14.4/go.mod h1:3Kkujc6A8KjpNvSKu1jNCcFjSgEEyCxaDJVgShHz0J8=
 github.com/fiatjaf/khatru v0.14.0 h1:zpWlAA87XBpDKBPIDbAuNw/HpKXzyt5XHVDbSvUbmDo=
